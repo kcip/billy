@@ -1,13 +1,16 @@
 {
   "name": "guess_the_word",
   "version": "1.0.0",
+  "repository": {
+    "url": "git+https://github.com/kcip/billy.git"
+  },
   "description": "",
   "main": "index.js",
   "scripts": {
     "build": "webpack",
     "dev": "webpack serve"
   },
-  "keywords": [],
+  "keywords": [ ],
   "author": "",
   "license": "ISC",
   "devDependencies": {
