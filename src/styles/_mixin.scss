@@ -1,0 +1,70 @@
+@mixin grid {
+	display: grid;
+	grid-template-columns: 1fr;
+}
+
+//MEDIA QUERIES
+@mixin smallScreen {
+	@media (max-width: 414px) {
+		@content;
+	}
+}
+@mixin mediumScreen {
+	@media (min-width: 415px) and (max-width: 600px) {
+		@content;
+	}
+}
+@mixin largeScreen {
+	@media (min-width: 601px) and (max-width: 780px) {
+		@content;
+	}
+}
+
+@mixin xLargeScreen {
+	@media (min-width: 781px) and (max-width: 900px) {
+		@content;
+	}
+}
+@mixin xxLargeScreen {
+	@media (min-width: 901px) and (max-width: 1000px) {
+		@content;
+	}
+}
+@mixin xLargeDesktop {
+	@media (min-width: 1500px) {
+		@content;
+	}
+}
+@mixin desktop {
+	@media (min-width: 1001px) {
+		@content;
+	}
+}
+@mixin ipadPro {
+	@media (min-height: 1360px) {
+		@content;
+	}
+}
+
+@mixin smallHeight {
+	@media (min-height: 500px) {
+		@content;
+	}
+}
+@mixin largeHeight {
+	@media (min-height: 1225px) {
+		@content;
+	}
+}
+
+@mixin surfaceDuo {
+	@media (max-height: 550px) {
+		@content;
+	}
+}
+
+@mixin mediumScreenAndHigher {
+	@media (min-width: 539px) {
+		@content;
+	}
+}
